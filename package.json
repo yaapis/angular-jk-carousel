@@ -1,11 +1,11 @@
 {
   "name": "angular-jk-carousel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Amazing carousel for angular material",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/juank11memphis/angular-jk-carousel.git"
-	},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/juank11memphis/angular-jk-carousel.git"
+  },
   "scripts": {
     "prepublish": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,7 @@
     "url": "https://github.com/juank11memphis/angular-jk-carousel/issues"
   },
   "homepage": "https://github.com/juank11memphis/angular-jk-carousel#readme",
-	"author": "Juan Carlos Morales Mora <juank.memphis@gmail.com>",
+  "author": "Juan Carlos Morales Mora <juank.memphis@gmail.com>",
   "license": "MIT",
   "keywords": [
     "angular",
