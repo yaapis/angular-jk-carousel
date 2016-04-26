@@ -24,7 +24,7 @@
     };
 
     that.onDataChange = function() {
-      if (that.isDataInvalidOrTooSmall()) {
+      if (!that.data || that.data.length === 0) {
         return;
       }
       that.executeCloneData();
@@ -56,7 +56,6 @@
       }
       var currentElementParentWidth = that.elementParent.prop('offsetWidth');
       if( currentElementParentWidth < that.maxWidth ){
-        console.log(currentElementParentWidth, that.maxWidth);
         var newHeight = (that.maxHeight * currentElementParentWidth) / that.maxWidth;
         that.element.css('width', currentElementParentWidth + 'px');
         that.element.css('height', newHeight + 'px');
@@ -124,6 +123,9 @@
     };
 
     that.validateAutoSlide = function() {
+      if( typeof(that.autoSlide) === 'string' ){
+        that.autoSlide = that.autoSlide === 'true' ? true : false;
+      }
       if (!that.autoSlide) {
         that.stopAutoSlide();
       } else {
@@ -243,7 +245,7 @@
     };
 
     that.isDataInvalidOrTooSmall = function() {
-      if (!that.data || that.data.length === 0) {
+      if (!that.data || that.data.length <= 1) {
         return true;
       }
       return false;
