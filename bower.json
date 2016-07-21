@@ -1,7 +1,7 @@
 {
   "name": "angular-jk-carousel",
   "description": "An Amazing Fully Responsive AngularJS 1 Carousel that works with Angular Material.",
-  "main": "",
+  "main": "./dist/jk-carousel.js",
   "authors": [
     "Juan Carlos Morales Mora <juank.memphis@gmail.com>",
     "Pablo Gonzalez <pablohgm@gmail.com>"
